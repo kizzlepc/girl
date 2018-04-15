@@ -3,3 +3,12 @@ server:
 spring:
   profiles:
     active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.81:3306/userdb?useSSL=false
+    username: yuancheng
+    password: mysql
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
