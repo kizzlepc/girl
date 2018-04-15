@@ -14,9 +14,13 @@ public class HelloController {
 	@Value("${age}")
 	private Integer age;
 	
+	@Value("${content}")
+	private String content;
+	
 	@RequestMapping(value="/hello", method=RequestMethod.GET)
 	public String say() {
 		//return "Hello Spring Boot!";
-		return cupSize+":"+age;
+		//return cupSize+":"+age;
+		return content;
 	}
 }
