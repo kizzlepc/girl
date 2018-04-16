@@ -1,3 +1,9 @@
+server:
+  port: 8888
 girl:
   cupSize: B
   age: 18
+spring:
+  http:
+    encoding:
+      charset: GBK
